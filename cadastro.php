@@ -1,4 +1,5 @@
 <?php
+    $titulo="Cadastro de Perguntas";
     include "./conexao.php";
     include "./cabecalho.php";
 ?>
