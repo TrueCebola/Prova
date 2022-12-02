@@ -3,13 +3,12 @@
     include "./conexao.php";
     include "./cabecalho.php";
 ?>
-    <h2 class="text-center mt-3 mb-3">Cadastro de Perguntas</h2>
-    <div class="container">
-        <div class="card">
+    <h2 class="text-center mb-3">Cadastro de Perguntas</h2>
+        <div class="card mb-3 border-secondary">
             <form>
-                <div class="card-header">
+                <div class="card-header text-bg-dark mb-3">
                     <label for="exampleInputEmail1" class="form-label">Pergunta</label>
-                    <textarea class="form-control mb-2" aria-label="With textarea"></textarea>
+                    <textarea class="form-control mb-2" aria-label="With textarea" placeholder="Digite a pergunta"></textarea>
                 </div>
                 <div class="card-body">
                     <label for="exampleInputEmail1" class="form-label">Respostas</label>
@@ -19,38 +18,38 @@
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">A. </label>
                             </div>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Digite a alternativa" aria-label="Digite a alternativa" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-text">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">B. </label>
                             </div>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Digite a alternativa" aria-label="Digite a alternativa" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-text">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">C. </label>
                             </div>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Digite a alternativa" aria-label="Digite a alternativa" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-text">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">D. </label>
                             </div>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Digite a alternativa" aria-label="Digite a alternativa" aria-describedby="basic-addon1">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-text">
                                 <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
                                 <label class="form-check-label" for="flexRadioDefault1">E. </label>
                             </div>
-                            <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control" placeholder="Digite a alternativa" aria-label="Digite a alternativa" aria-describedby="basic-addon1">
                         </div>
+                        <a id="btnSubmit" type="submit" class="btn btn-success mt-3">Adicionar pergunta</a>
                     </div>
-                    <a type="submit" class="btn btn-secondary mt-3">Adicionar pergunta</a>
                 </div>
             </form>
         </div>

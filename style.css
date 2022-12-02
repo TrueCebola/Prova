@@ -1,5 +1,39 @@
+html,body{
+    background-color: #cccccc;
+    height: 100%;
+}
 .card{
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-bottom: 10px;
+    box-shadow: 0px 5px 10px #606060;
+}
+.card:hover{
+    box-shadow: 0px 5px 10px #151515;
+    transition: 0.15s;
+}
+input:hover{
+    box-shadow: -1px 0 #606060, 0 1px #606060, 1px 0 #606060, 0 -1px #606060;
+    box-shadow: 0px 0px 3px #606060;
+    transition: 0.15s;
+}
+.container{
+    width:90%;
+    min-height: 100%;
+    background-color: #dddddd;
+    padding-top: 5px;
+    padding-bottom: 75px;
+    box-shadow: 0px 0px 100px #454545;
+}
+.card-body{
+    background-color: #fafafa;
+}
+#btnSubmit{
+    float: right;
+    margin-bottom: 10px;
+}
+#btnSubmit:hover{
+    box-shadow: -1px 0 #198754, 0 1px #198754, 1px 0 #198754, 0 -1px #198754;
+    box-shadow: 0px 0px 7px #198754;
+    transition: 0.15s;
 }

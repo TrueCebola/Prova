@@ -3,19 +3,19 @@ $titulo="Simulado";
 include "./conexao.php";
 include "./cabecalho.php";
 ?>
-    <h1 class="text-center mt-3 mb-3">Simulado</h1>
+    <h1 class="text-center mb-3">Simulado</h1>
     <h2 class="text-center mt-3 mb-3">
         Responda as 15 perguntas.
     </h2>
-    <div class="container">
+    <form>
         <?php
         $n=1;
         $query="select * from questoes order by rand() limit 15";
         $resultado=mysqli_query($conexao,$query);
         while($linha=mysqli_fetch_array($resultado)){
         ?>
-        <div class="card mt-4 mb-2">
-            <div class="card-header"><?php echo $n.". ".$linha["pergunta"];?></div>
+        <div class="card mb-3 border-secondary">
+            <div class="card-header text-bg-dark mb-3"><?php echo $n.". ".$linha["pergunta"];?></div>
             <div class="card-body">
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="<?php echo $linha["id"];?>" id="<?php echo $linha["id"];?>" value="a">
@@ -43,6 +43,8 @@ include "./cabecalho.php";
         $n++;
         }
         ?>
+        <a id="btnSubmit" type="submit" class="btn btn-success mt-3">Confirmar respostas</a>
+    </form>
     </div>
 </body>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
