@@ -19,23 +19,26 @@ $resultado=mysqli_query($conexao,$query);
             <div class="card-body">
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="<?php echo $linha["id"];?>" id="<?php echo $linha["id"];?>" value="a">
-                    <label class="form-check-label">A. <?php echo $linha["a"];?></label>
+                    <label class="form-check-label" for="flexRadioDefault1">A. <?php echo $linha["a"];?></label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="<?php echo $linha["id"];?>" id="<?php echo $linha["id"];?>" value="b">
-                    <label class="form-check-label">B. <?php echo $linha["b"];?></label>
+                    <label class="form-check-label" for="flexRadioDefault2">B. <?php echo $linha["b"];?></label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="<?php echo $linha["id"];?>" id="<?php echo $linha["id"];?>" value="c">
-                    <label class="form-check-label">C. <?php echo $linha["c"];?></label>
+                    <label class="form-check-label" for="flexRadioDefault3">C. <?php echo $linha["c"];?></label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="<?php echo $linha["id"];?>" id="<?php echo $linha["id"];?>" value="d">
-                    <label class="form-check-label">D. <?php echo $linha["d"];?></label>
+                    <label class="form-check-label" for="flexRadioDefault4">D. <?php echo $linha["d"];?></label>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="radio" name="<?php echo $linha["id"];?>" id="<?php echo $linha["id"];?>" value="e">
-                    <label class="form-check-label">E. <?php echo $linha["e"];?></label>
+                    <label class="form-check-label" for="flexRadioDefault5">E. <?php echo $linha["e"];?></label>
+                </div>
+                <div>
+                    <input type="hidden" value="<?php echo $linha["id"];?>" name="id-<?php echo $n;?>"/>
                 </div>
             </div>
         </div>
